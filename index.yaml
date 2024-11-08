@@ -1,0 +1,20 @@
+apiVersion: v1
+entries:
+  python-api:
+  - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2024-11-08T12:52:01.37225129Z"
+    description: A Helm chart for python-api demo
+    digest: e2a88d9cfc78eca401bfe4c2d735b8bbd4f08b8e8dfff00b3ceb78b30585f6b6
+    keywords:
+    - helm-ghcr-gh-pages-demo
+    - python-api-demo
+    maintainers:
+    - email: saurav.karate@gmail.com
+      name: sarubhai
+    name: python-api
+    type: application
+    urls:
+    - https://github.com/sarubhai/gh-pages-as-helm-repo/releases/download/python-api-0.1.1/python-api-0.1.1.tgz
+    version: 0.1.1
+generated: "2024-11-08T12:52:01.372262241Z"
