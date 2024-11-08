@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: python-api-service
+  labels:
+    app: python-api-service
+    app.kubernetes.io/name: python-api-service
+    app.kubernetes.io/version: v1.0
+spec:
+  type: {{ .Values.service.type }}
+  selector:
+    app: python-api
+  ports:
+  - name: http
+    protocol: TCP
+    port: {{ .Values.service.port }}
+    targetPort: 5000

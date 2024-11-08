@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  python-api:
+    # Apple M1 Chip
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: python-api
+    restart: always
+    ports:
+      - 5000:5000
+    networks:
+      - backend-network
+
+networks:
+  backend-network:
+    driver: bridge
