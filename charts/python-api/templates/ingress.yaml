@@ -4,7 +4,6 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: python-api-ingress
-  namespace: backend-api
   labels:
     app: python-api-ingress
     app.kubernetes.io/name: python-api-ingress
